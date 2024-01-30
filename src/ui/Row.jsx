@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import css from "styled-components";
+import { css } from "styled-components";
 const Row = styled.div`
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   ${(props) =>
     props.type === "vertical" &&
     css`
@@ -12,8 +12,11 @@ const Row = styled.div`
   ${(props) =>
     props.type === "horizontal" &&
     css`
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
     `}
 `;
+Row.defaultProps = {
+  type: "vertical",
+};
 export default Row;
