@@ -5,8 +5,8 @@ import { HiCalendarDays } from "react-icons/hi2";
 import { GiWoodCabin } from "react-icons/gi";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { MdOutlineSettings } from "react-icons/md";
-import { MdOutlineSupervisorAccount } from "react-icons/md";
-import { BiLogInCircle } from "react-icons/bi";
+// import { MdOutlineSupervisorAccount } from "react-icons/md";
+// import { BiLogInCircle } from "react-icons/bi";
 const NavList = styled.ul`
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@ const StyledNavLink = styled(NavLink)`
     display: flex;
     align-items: center;
     gap: 1.2rem;
+    text-align: center;
 
     color: var(--color-grey-600);
     font-size: 1.6rem;
